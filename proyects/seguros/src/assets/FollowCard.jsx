@@ -1,9 +1,10 @@
 import { useState } from "react"
 
-export function FollowCard({children, formatUserName, userName='unknow', name}) {
-    const [isFollowing, setIsFollowing] = useState(false)
+// eslint-disable-next-line react/prop-types
+export function FollowCard ({children, userName, initialIsFollowing}) {
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
-    const text = isFollowing? 'Siguiendo' : 'Seguir'
+    const text = isFollowing ? 'Siguiendo' : 'Seguir'
     const buttonClassName = isFollowing 
     ? 'tw-followCard-button is-following'
     : 'tw-followCard-button'
@@ -19,13 +20,14 @@ export function FollowCard({children, formatUserName, userName='unknow', name}) 
             src={`https://unavatar.io/${userName}`}
             alt="Avatar de Midudev" />
             <div className='tw-followCard-info'>
-                {children}
-                <span className='tw-followCard-info-userName'>{formatUserName(userName)}</span>
+                <strong>{children}</strong>
+                <span className='tw-followCard-info-userName'>{userName}</span>
             </div>
         </header>
         <aside>
             <button className={buttonClassName} onClick={handleClick}>
-                {text}
+                <span className="tw-folowCard-text">{text}</span> 
+                <span className="tw-followCard-unfollow">Dejar de seguir</span>
             </button>
         </aside>
     </article>

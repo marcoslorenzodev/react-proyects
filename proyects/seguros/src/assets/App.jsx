@@ -1,5 +1,6 @@
 import './App.css'
-import { FollowCard } from './FollowCard'
+import { FollowCard } from './FollowCard.jsx'
+
 
 export function App(){
     const marcoslorenzo = { userName: 'marcoslorenzo'}
