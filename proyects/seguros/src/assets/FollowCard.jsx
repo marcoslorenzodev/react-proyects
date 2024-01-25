@@ -14,7 +14,7 @@ export function FollowCard ({children, userName, initialIsFollowing}) {
     }
     return(
         <article className='tw-followCard'>
-        <header className='tw-followCard-header'> asd
+        <header className='tw-followCard-header'>
             <img
             className='tw-followCard-avatar'
             src={`https://unavatar.io/${userName}`}
