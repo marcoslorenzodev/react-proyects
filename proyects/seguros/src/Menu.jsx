@@ -51,6 +51,7 @@ export function Menu () {
             </div>
             <div>
                 <h1>hola jona</h1>
+                <h1>Hola</h1>
             </div>
         </section>
     )
