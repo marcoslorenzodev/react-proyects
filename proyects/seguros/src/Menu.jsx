@@ -49,10 +49,6 @@ export function Menu () {
                 </svg>
                 <a href="">Help and support</a>
             </div>
-            <div>
-                <h1>hola jona</h1>
-                <h1>Hola</h1>
-            </div>
         </section>
     )
 }
