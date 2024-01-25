@@ -33,3 +33,4 @@ export function FollowCard ({children, userName, initialIsFollowing}) {
     </article>
     )
 }
+
